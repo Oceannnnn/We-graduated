@@ -1,0 +1,484 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+/*主文件*/
+#BOX{
+	width: 100%;
+	height: 100%;
+	transition: all 1s;
+}
+#BOX .box{
+	width: 100%;
+	height: 100%;
+	background: rgb(12, 50, 21);
+	position: relative;
+}
+/*音乐开始*/
+#music{
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 3;
+	cursor: pointer;
+}
+#music .music_1{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#music .music_2{
+	position: absolute;
+    left: 9px;
+    top: 7px;
+    animation: music 2s linear infinite;
+}
+@keyframes music{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+/*音乐结束*/
+/*第一屏开始*/
+#BOX .box.one .one_1{
+	    margin: 0 auto;
+    width: 80%;
+    padding-top: 25%;
+    animation-delay: 0.3s;
+}
+#BOX .box.one .one_1 img{
+width: 100%;
+} 
+#BOX .box.one .one_2{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 5%;
+    animation-delay: 1.3s;
+    animation-duration: 1s;
+}
+#BOX .box.one .one_2 img{
+    width: 86%;
+    position: absolute;
+    left: 13%;
+}
+/*第二屏开始*/
+#BOX .box.two .two_1{
+    position: absolute;
+    top: 16%;
+    width: 46%;
+    right: 0%;
+    animation-delay: 0.3s;
+	
+}
+#BOX .box.two .two_2{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 46%;
+    position: relative;
+    z-index: 1;
+    animation-delay: 0.3s;
+}
+#BOX .box.two .two_3{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 19%;
+    animation-delay: 1.3s;
+}
+#BOX .box.two .two_2 img{
+	width: 100%;
+	border: 2px #fff solid;
+}
+#BOX .box.two .two_3 img{
+	width: 100%;
+}
+#BOX .box.two .two_4{
+    position: absolute;
+    width: 46%;
+    top: 0px;
+    left: 0px;
+}
+#BOX .box.two .two_5{
+    position: absolute;
+    width: 25%;
+    bottom: 0px;
+    right: 0px;
+}
+
+/*第三屏开始*/
+#BOX .box.three .three_1{
+    background-color: black;
+    width: 85%;
+    padding: 4px;
+    line-height: 30px;
+    text-align: center;
+     animation-delay: 0.3s;
+}
+#BOX .box.three .three_1 p{
+	font-family: 微软简中圆;
+    color: #fff;
+}
+#BOX .box.three .three_2{
+    width: 60%;
+    position: absolute;
+    top: 18%;
+    left: 2%;
+     animation-delay: 1.3s;
+     border: 5px #fff solid;
+}
+#BOX .box.three .three_3{
+    width: 54%;
+    position: absolute;
+    top: 42%;
+    right: 0%;
+     animation-delay: 1.3s;
+     border: 5px #fff solid;
+}
+.three_4{
+	    width: 100%;
+	position: absolute;
+    bottom: 0;
+}
+.three_4 img{
+	width: 100%;
+}
+/*<!--第四屏开始-->*/
+#BOX .box.four .four_01{
+	    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 10%;
+}
+#BOX .box.four .four_1{
+	    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 74%;
+     animation-delay: 0.3s;
+     animation-iteration-count: infinite;
+}
+#BOX .box.four .four_2{
+	    position: absolute;
+    right: 0;
+    width: 73%;
+    top: 52px;
+     animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+}
+#BOX .box.four .four_3{
+width: 100%;
+}
+#BOX .box.four .top{
+	border: 5px #fff solid;
+	position: absolute;
+    width: 100%;
+    top: 10px;
+     animation-delay: 1.9s;
+     animation-duration: 1.7s;
+}
+#BOX .box.four .bottom{
+	    position: absolute;
+    width: 74%;
+    margin-top: 93%;
+     animation-delay: 1.5s;
+     animation-duration: 1.7s;
+}
+#BOX .box.four .bottom img{
+	border: 5px #fff solid;
+}
+#BOX .box.four .four_4{
+    width: 100%;
+}
+#BOX .box.four .four_02{
+	    width: 80%;
+    margin: 0 auto;
+    margin-top: 24%;
+    position: relative;
+    z-index: 2;
+}
+/*<!--第五屏开始-->*/
+#BOX .box.five .five_1{
+    width: 50%;
+    position: absolute;
+    right: 4%;
+    top: 27%;
+    animation-delay: 1.2s;
+    animation-duration: 1.2s;
+}
+#BOX .box.five .five_2 img{
+	border: 5px solid #fff;
+}
+#BOX .box.five .five_1 img{
+	border: 5px solid #fff;
+}
+#BOX .box.five .five_2{
+    width: 66%;
+    position: absolute;
+    right: 7%;
+    top: 55%;
+    z-index: 1;
+    animation-delay: 1.2s;
+    animation-duration: 1.2s;
+}
+#BOX .box.five img{
+	width: 100%;
+}
+#BOX .box.five .five_3{
+	    position: absolute;
+    width: 34%;
+    top: 3%;
+    left: 5%;
+    animation-delay: 0.4s;
+}
+#BOX .box.five .five_4{
+position: absolute;
+    width: 37%;
+    bottom: 0%;
+    right: -1%;
+}
+/*<!--第六屏开始-->*/
+#BOX .box.six .six_1{
+	    width: 80%;
+    margin: 0 auto;
+    padding-top: 12%;
+    animation-delay: 0.1s;
+}
+#BOX .box.six .six_2{
+	    width: 58%;
+    margin: 0 auto;
+    margin-top: 1%;
+    animation-delay: 0.6s;
+}
+#BOX .box.six .six_3{
+	    width: 60%;
+    margin: 0 auto;
+    margin-top: 5%;
+        padding: 5px 5px 0px 5px;
+    border: 5px #fff solid;
+    box-sizing: border-box;
+    animation-delay: 1.4s;
+}
+#BOX .box.six .six_4{
+	    width: 45%;
+    margin: 0 auto;
+        padding: 5px 5px 0px 5px;
+    margin-top: 5%;
+    position: relative;
+    border: 5px #fff solid;
+    z-index: 1;
+    animation-delay: 2.4s;
+}
+#BOX .box.six .six_5{
+	    width: 70%;
+	    position: absolute;
+	    bottom: 0px;
+	    right: 0px;
+}
+#BOX .box.six img{
+	width: 100%;
+}
+/*<!--第⑦屏开始-->*/
+#BOX .box.seven .q_1{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 37%;
+}
+#BOX .box.seven .q_2{
+    width: 80%;
+    margin: 0 auto;
+     padding-top: 121%;
+	
+}
+#BOX .box.seven .q_3{
+    position: absolute;
+    top: 45%;
+    right:5%;
+    width: 45%;
+    border: 5px solid #fff;
+}
+#BOX .box.seven .q_4{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 64%;
+    border: 5px solid #fff;
+}
+#BOX .box.seven .q_2 img{
+	width: 100%;
+}
+/*<!--第八屏开始-->*/
+#BOX .box.eight .b_1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 37%;
+}
+#BOX .box.eight .b_2{
+    width: 57%;
+    top: 11%;
+    right: 2%;
+    position: absolute;
+    animation-delay: 2s;
+}
+#BOX .box.eight .b_3{
+position: relative;
+    margin: 0 auto;
+    height: 70%;
+    width: 90%;
+    padding-top: 10%;
+}
+#BOX .box.eight .b_4{
+    width: 50%;
+    top: 61%;
+    left: 0px;
+    position: absolute;
+     border: 3px solid #fff;
+}
+#BOX .box.eight .b_5{
+    width: 50%;
+    top: 30%;
+    left: 0px;
+    position: absolute;
+     border: 3px solid #fff;
+     animation-delay: 0.3s;
+}
+#BOX .box.eight .b_6{
+    width: 47%;
+    top: 39%;
+   right:-3%;
+    position: absolute;
+     border: 3px solid #fff;
+     animation-delay: 0.3s;
+}
+#BOX .box.eight .b_7{
+    width: 47%;
+    top: 68%;
+    right:-3%;
+    position: absolute;
+     border: 3px solid #fff;
+      animation-delay:1.3s;
+      
+}
+#BOX .box.eight .b_8{
+    width: 50%;
+    bottom: 10px;
+    position: absolute;
+    animation-delay: 2s;
+}#BOX .box.eight .b_9{
+    width: 54%;
+    bottom: 0%;
+    right: 0%;
+    position: absolute;
+}
+/*<!--第九屏开始-->*/
+.night_1{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	
+}#BOX .box.night .night_2{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20%;
+    height: 59%;
+    position: relative;
+}
+#BOX .box.night .night_3{
+    width: 72%;
+    top: 22%;
+    position: absolute;
+    border: 3px solid #fff;
+    animation-delay: 1.0s;
+}
+#BOX .box.night .night_4{
+	width: 76%;
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+     border: 3px solid #fff;
+     animation-delay: 1.6s;
+}
+#BOX .box.night .night_5{
+	    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    animation-delay: 0.2s;
+}
+#BOX .box.night .night_5 img{
+	width: 100%;
+}
+/*<!--第十屏开始-->*/
+#BOX .box.ten .ten_1{
+	width: 36%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+#BOX .box.ten .ten_2{
+    position: relative;
+    width: 90%;
+    z-index: 1;
+    padding-top: 10%;
+    margin: 0 auto;
+    height: 80%;
+    animation-delay: 0.2s;
+}
+#BOX .box.ten .ten_3{
+    position: absolute;
+    right: 0px;
+    bottom: 49%;
+    width: 78%;
+    border: 3px solid #fff;
+    animation-delay: 0.2s;
+}
+#BOX .box.ten .ten_4{
+    position: absolute;
+    width: 65%;
+    right: 0px;
+    border: 3px solid #fff;
+    bottom: 9%;
+    animation-delay: 0.2s;
+}
+#BOX .box.ten .ten_5{
+    position: absolute;
+    width: 18%;
+    left: 0px;
+    bottom: 11%;
+    animation-delay: 0.2s;
+}
+.ten_6{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+/*<!--最后屏开始-->*/
+#BOX .box.last .last_1{
+	width: 50%;
+	margin: auto;
+	padding-top: 60%;
+	animation-delay: 0.2s;
+}
+#BOX .box.last .last_01{
+	width: 100%;
+}
+#BOX .box.last .last_2{
+	width: 72%;
+	margin: auto;
+	animation-delay: 1.2s;
+}
+#BOX .box.last .last_02{
+	width: 100%;
+}
